@@ -68,7 +68,7 @@
   <ul>
     <!-- 11 부터 시작해서 20까지 2씩 증가하며 반복하면서 li 태그 출력 -->
     <!-- [11, 13, 15, 17, 19] 로 이루어진 배열 발생 -->
-    <li th:each="${#numbers.sequence(11, 20)}"
+    <li th:each="${#numbers.sequence(11, 20, 2)}"
       th:text="|테스트 ${i}|"
     ></li> 
   </ul>
