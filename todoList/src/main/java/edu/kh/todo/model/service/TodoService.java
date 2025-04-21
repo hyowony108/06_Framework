@@ -7,7 +7,7 @@ import edu.kh.todo.model.dto.Todo;
 
 public interface TodoService {
 
-	/** (TEST) todoNo가 1일 할 일 제목 조회
+	/** (TEST) todoNo 가 1인 할 일 제목 조회
 	 * @return title
 	 */
 	String testTitle();
@@ -58,9 +58,12 @@ public interface TodoService {
 	 */
 	int getCompleteCount();
 
-	/** 할 일 목록 조회
+	/** 할일 목록 조회
 	 * @return todoList
 	 */
 	List<Todo> selectList();
+	
+	
+	
 
 }

@@ -13,9 +13,9 @@ import edu.kh.todo.model.service.TodoService;
 import lombok.extern.slf4j.Slf4j;
 
 @Controller // 요청/응답 제어 역할 명시 + Bean 등록
-@Slf4j // 로그 객체 자동 생성 (lombok 제공)
+@Slf4j // 로그객체 자동 생성(lombok 제공)
 public class MainController {
-
+	
 	@Autowired
 	private TodoService service;
 	
@@ -28,7 +28,7 @@ public class MainController {
 		String testTitle = service.testTitle();
 		model.addAttribute("testTitle", testTitle);
 		
-		// -------------------------------------------------------------------------------
+		// -------------------------------------------------------
 		
 		// TB_TODO 테이블에 저장된 전체 할 일 목록 조회하기
 		// + 완료된 할 일 갯수
@@ -40,12 +40,17 @@ public class MainController {
 		List<Todo> todoList = (List<Todo>)map.get("todoList");
 		int completeCount = (int)map.get("completeCount");
 		
-		// Model을 이용해서 조회 결과 request scope 추가
+		// Model을 이용해서 조회 결과 request scope에 추가
 		model.addAttribute("todoList", todoList);
 		model.addAttribute("completeCount", completeCount);
 		
-		
-		// src/main/resources/templates/common/main.html
+		// src/main/resource/templates/common/main.html
 		return "common/main";
 	}
+	
+
+	
+	
+	
+	
 }
