@@ -70,7 +70,7 @@ AUTHORITY,
 TO_CHAR(ENROLL_DATE, 'YYYY"년" MM"월" DD"일" HH24"시" MI"분" SS"초"') ENROLL_DATE
 FROM "MEMBER"
 WHERE MEMBER_EMAIL = 'user01@kh.or.kr'
-AND MEMBER_DEL_FL = 'N'
+AND MEMBER_DEL_FL = 'N';
 
 
 
@@ -95,6 +95,11 @@ CREATE SEQUENCE SEQ_KEY_NO NOCACHE; -- 인증키 구분 번호 시퀀스
 SELECT * FROM "TB_AUTH_KEY";
 
 COMMIT;
+
+ SELECT COUNT(*)
+ FROM "MEMBER"
+ WHERE MEMBER_EMAIL = #{memberEmail}
+ AND MEMBER_DEL_FL = 'N';
 
 
 ------------------------------------------
@@ -632,3 +637,9 @@ OR PARTICIPANT = 1
 ORDER BY MAX_MESSAGE_NO DESC NULLS LAST;
 
 SELECT * FROM MEMBER;
+
+
+   	UPDATE "TB_AUTH_KEY" SET
+   	AUTH KEY = #{authKey},
+   	CREATE_TIME = SYSDATE
+   	WHERE EMAIL = #{email};
