@@ -55,6 +55,7 @@ if(loginEmail != null) { // 로그인폼의 이메일 input태그가 화면상�
   }
 }
 
+/*
 // 이메일, 비밀번호가 없는 상태에서 로그인 버튼을 누를 시
 
 const loginPw = document.querySelector("input[name='memberPw']");
@@ -62,3 +63,4 @@ const loginPw = document.querySelector("input[name='memberPw']");
 if(loginEmail.value.trim().length === 0 || loginPw.value.trim().length === 0 ){
   alert("이메일과 비밀번호를 모드 입력해주세요.");
 }
+*/
