@@ -26,4 +26,6 @@ public interface BoardMapper {
 	 */
 	List<Board> selectBoardList(int boardCode, RowBounds rowBounds);
 
+	Board selectOne(Map<String, Integer> map);
+
 }
