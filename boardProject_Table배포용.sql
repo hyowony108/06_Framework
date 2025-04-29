@@ -448,7 +448,7 @@ END;
 
 COMMIT;
 
-SELECT COUNT(*) FROM "COMMENT";
+SELECT * FROM "COMMENT";
 
 -- 특정 게시판에(BOARD_CODE) 삭제되지 않은 게시글 목록 조회
 -- 단, 최신글이 제일 위에 존재하도록 조회
