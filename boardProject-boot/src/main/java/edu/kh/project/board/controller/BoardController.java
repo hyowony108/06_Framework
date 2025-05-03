@@ -32,6 +32,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class BoardController {
 
+	// 깃 연결 테스트
 	@Autowired
 	private boardService service;
 	
