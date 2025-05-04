@@ -258,6 +258,7 @@ COMMENT ON COLUMN "COMMENT"."MEMBER_NO" IS '회원 번호(PK)';
 
 COMMENT ON COLUMN "COMMENT"."PARENT_COMMENT_NO" IS '부모 댓글 번호';
 
+COMMIT;
 
 --------------------- PK -----------------------
 
@@ -330,14 +331,14 @@ REFERENCES "MEMBER" (
 );
 
 
-
+--
 ALTER TABLE "BOARD_LIKE" ADD CONSTRAINT "FK_BOARD_TO_BOARD_LIKE_1" FOREIGN KEY (
 	"BOARD_NO"
 )
 REFERENCES "BOARD" (
 	"BOARD_NO"
 );
-
+--
 
 ALTER TABLE "BOARD_IMG" ADD CONSTRAINT "FK_BOARD_TO_BOARD_IMG_1" FOREIGN KEY (
 	"BOARD_NO"
@@ -403,7 +404,7 @@ SELECT * FROM "BOARD_TYPE";
 -- 4/28 전부 수행함
 ---------------------------------------------
 
-SELECT*FROM "MEMBER";
+SELECT * FROM "MEMBER";
 
 /* 게시글 번호 시퀀스 생성 */
 CREATE SEQUENCE SEQ_BOARD_NO NOCACHE; 
@@ -441,6 +442,8 @@ ORDER BY BOARD_CODE;
 
 /* 댓글 번호 시퀀스 생성 */
 CREATE SEQUENCE SEQ_COMMENT_NO NOCACHE;
+
+---------------------------------------------5/2
 
 /* 댓글 ("COMMNET") 테이블에 샘플 데이터 추가*/
 

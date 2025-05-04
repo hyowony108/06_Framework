@@ -1,29 +1,27 @@
 package edu.kh.project.main.controller;
 
+import java.lang.reflect.Member;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-@Controller // 요청/응답 제어 역할 명시 + Bean 등록
+import edu.kh.project.member.model.service.MemberService;
+
+@Controller
+@RequestMapping("member")
 public class MainController {
 	
-	@RequestMapping("/")  //  "/" 요청 매핑
-	public String mainPage() {
-		
-		// forward 하겠다
-		// 경로 :   src/main/resources(classpath:)/templates/common/main.html
-		// 접두사 : src/main/resources(classpath:)/templates/  
-		// 접미사 : .html
-		return "common/main";
-	}
+	@Autowired
+	private MemberService service;
 	
-	// Login Filter -> 로그인 안되어있을 때 loginError  리다이렉트
-	@GetMapping("loginError")
-	public String loginError( RedirectAttributes ra) {
+	@PostMapping("login")
+	public String login(Member inputMember, 
+						RedirectAttributes ra,
+						) {
 		
-		ra.addFlashAttribute("message", "로그인 후 이용해주세요.");
-		
-		return "redirect:";
 	}
 }
