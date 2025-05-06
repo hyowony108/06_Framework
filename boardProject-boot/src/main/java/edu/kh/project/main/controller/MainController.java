@@ -20,8 +20,8 @@ public class MainController {
 	
 	@PostMapping("login")
 	public String login(Member inputMember, 
-						RedirectAttributes ra,
+						RedirectAttributes ra
 						) {
-		
+		 return "";
 	}
 }
