@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import edu.kh.project.board.model.service.boardService;
+import edu.kh.project.board.model.service.BoardService;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -27,7 +27,7 @@ import lombok.extern.slf4j.Slf4j;
 public class BoardTypeIntercepteor implements HandlerInterceptor{
 	
 	@Autowired
-	private boardService service;
+	private BoardService service;
 
 	// 전처리 : Controller로 요청이 들어오기 전 실행되는 메서드
 	@Override

@@ -20,7 +20,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import edu.kh.project.board.model.dto.Board;
 import edu.kh.project.board.model.dto.BoardImg;
-import edu.kh.project.board.model.service.boardService;
+import edu.kh.project.board.model.service.BoardService;
 import edu.kh.project.member.model.dto.Member;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
@@ -34,7 +34,7 @@ public class BoardController {
 
 	// 깃 연결 테스트
 	@Autowired
-	private boardService service;
+	private BoardService service;
 	
 	/**
 	 * 게시글 목록 조회

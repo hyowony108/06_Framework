@@ -5,7 +5,7 @@ import java.util.Map;
 
 import edu.kh.project.board.model.dto.Board;
 
-public interface boardService {
+public interface BoardService {
 
 	/** 게시판 종류 조회 서비스(Interceptor)
 	 * @return
