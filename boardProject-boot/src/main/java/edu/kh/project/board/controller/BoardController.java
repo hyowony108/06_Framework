@@ -20,7 +20,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import edu.kh.project.board.model.dto.Board;
 import edu.kh.project.board.model.dto.BoardImg;
-import edu.kh.project.board.model.service.boardService;
+import edu.kh.project.board.model.service.BoardService;
 import edu.kh.project.member.model.dto.Member;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
@@ -34,7 +34,7 @@ public class BoardController {
 
 	// 깃 연결 테스트
 	@Autowired
-	private boardService service;
+	private BoardService service;
 	
 	/**
 	 * 게시글 목록 조회
@@ -58,19 +58,35 @@ public class BoardController {
 	@GetMapping("{boardCode:[0-9]+}")  
 	public String selectBoardList(@PathVariable("boardCode") int boardCode,
 								  @RequestParam(value = "cp", required = false, defaultValue = "1") int cp,
-								  Model model) {
+								  Model model,
+								  @RequestParam Map<String, Object> paramMap) {
+		
+		// paramMap = {"query" = "짱구", "key" = "tc"}
 		
 		// 조회 서비스 호출 후 결과 반환 받기.
 		Map<String, Object> map = null;
 		
 		// 조건에 따라 서비스 메서드를 분기처리 하기 위해 map은 선언만 함.
 		
-		// 검색이 아닌 경우
+		// 검색이 아닌 경우 --> paramMap 은 {}
+		if(paramMap.get("key") == null) {
+			
+			// 게시글 목록 조회 서비스 호출
+			map = service.selectBoardList(boardCode, cp);
+			
+		} else {
+			
+			// 검색인 경우 --> paramMap = {"query" = "짱구", "key" = "tc"}
+			
+			// boardCode를 paramMap에 추가
+			paramMap.put("boardCode", boardCode);
+			// --> paramMap = {"query" = "짱구", "key" = "tc", "boardCode" = 1}
+			
+			//  검색 서비스 호출
+			map = service.searchList(paramMap, cp);
+		}
 		
-		// 게시글 목록 조회 서비스 호출
-		map = service.selectBoardList(boardCode, cp);
 		
-		// 검색인 경우
 		
 		 model.addAttribute("pagination", map.get("pagination"));
 		 model.addAttribute("boardList", map.get("boardList"));

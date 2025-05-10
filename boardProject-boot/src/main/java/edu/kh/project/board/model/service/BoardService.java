@@ -5,7 +5,7 @@ import java.util.Map;
 
 import edu.kh.project.board.model.dto.Board;
 
-public interface boardService {
+public interface BoardService {
 
 	/** 게시판 종류 조회 서비스(Interceptor)
 	 * @return
@@ -36,5 +36,12 @@ public interface boardService {
 	 * @return
 	 */
 	int updateReadCount(int boardNo);
+
+	/** 검색 서비스
+	 * @param paramMap
+	 * @param cp
+	 * @return
+	 */
+	Map<String, Object> searchList(Map<String, Object> paramMap, int cp);
 
 }
