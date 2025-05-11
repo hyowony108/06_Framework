@@ -179,7 +179,7 @@ public class MemberController {
 		//		   현재주소/member/signup (GET방식 요청)
 	}
 	
-	// 로그인 공부완
+	// 로그인 공부완료
 	
 	
 	
