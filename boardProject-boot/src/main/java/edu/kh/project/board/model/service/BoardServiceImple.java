@@ -169,4 +169,11 @@ public class BoardServiceImple implements BoardService{
 		
 		return map;
 	}
+	
+	@Override
+	public List<String> selectDBImageList() {
+		return mapper.selectDBImageList();
+	}
+	
+	
 }

@@ -7,6 +7,7 @@ import edu.kh.project.board.model.dto.Board;
 
 public interface BoardService {
 
+	
 	/** 게시판 종류 조회 서비스(Interceptor)
 	 * @return
 	 */
@@ -43,5 +44,10 @@ public interface BoardService {
 	 * @return
 	 */
 	Map<String, Object> searchList(Map<String, Object> paramMap, int cp);
+
+	/** DB이미지 파일명 목록 조회
+	 * 
+	 */
+	List<String> selectDBImageList();
 
 }

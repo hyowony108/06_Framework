@@ -69,5 +69,7 @@ public interface BoardMapper {
 	 * @param rowBounds
 	 * @return
 	 */
-	List<Board> selectSearchList(Map<String, Object> paramMap, RowBounds rowBounds); 
+	List<Board> selectSearchList(Map<String, Object> paramMap, RowBounds rowBounds);
+
+	List<String> selectDBImageList(); 
 }

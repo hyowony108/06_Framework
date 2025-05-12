@@ -19,10 +19,10 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 
 
-@SessionAttributes({"loginMember"})
-@Controller
-@RequestMapping("member")
-@Slf4j
+//@SessionAttributes({"loginMember"})
+//@Controller
+//@RequestMapping("member")
+//@Slf4j
 public class MemberController2 {
 	
 	@Autowired
