@@ -69,8 +69,9 @@
           th:href="@{/board/{boardCode}(boardCode=${boardType.boardCode})}">게시판 이름</a>
         </li>
       </th:block>
+
       <li class="chatting-li">
-        <a href="#">채팅</a>
+        <a th:href="@{/chatting/list}" th:text="채팅">채팅</a>
       </li>
     </ul>
   </nav>

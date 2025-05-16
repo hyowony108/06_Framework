@@ -1,0 +1,1255 @@
+/* Main_Page */
+
+position: relative;
+width: 1920px;
+height: 1694px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 33 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 765px;
+height: 67px;
+left: calc(50% - 765px/2 - 215.5px);
+top: 155px;
+
+background: #FFFFFF;
+border: 2px solid #3867FF;
+border-radius: 1000px;
+
+
+/* Rectangle 120 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 765px;
+height: 67px;
+left: calc(50% - 765px/2 - 215.5px);
+top: 155px;
+
+background: #FFFFFF;
+border: 2px solid #3867FF;
+border-radius: 1000px;
+
+
+/* Rectangle 121 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 765px;
+height: 67px;
+left: calc(50% - 765px/2 - 215.5px);
+top: 155px;
+
+background: #FFFFFF;
+border: 2px solid #3867FF;
+border-radius: 1000px;
+
+
+/* Rectangle 119 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 765px;
+height: 67px;
+left: calc(50% - 765px/2 - 215.5px);
+top: 155px;
+
+background: #FFFFFF;
+border: 2px solid #3867FF;
+border-radius: 1000px;
+
+
+/* Rectangle 15 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 379px;
+height: 196px;
+right: 361px;
+top: 257px;
+
+border: 2px solid #3867FF;
+border-radius: 15px;
+
+
+/* Group 106 */
+
+position: absolute;
+width: 93px;
+height: 33px;
+left: 1434px;
+top: 386px;
+
+
+
+/* Rectangle 79 */
+
+position: absolute;
+width: 93px;
+height: 33px;
+left: 1434px;
+top: 386px;
+
+background: #4B84FF;
+border-radius: 1000px;
+
+
+/* 마이페이지 */
+
+position: absolute;
+width: 60.77px;
+height: 17px;
+left: 1450.94px;
+top: 392px;
+
+/* 버튼 */
+font-family: 'AppleSDGothicNeoB00';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+
+color: #F8F9FF;
+
+
+
+/* Group 109 */
+
+position: absolute;
+width: 93.35px;
+height: 33px;
+left: 1329px;
+top: 386px;
+
+
+
+/* Rectangle 79 */
+
+position: absolute;
+width: 93.35px;
+height: 33px;
+left: 1329px;
+top: 386px;
+
+background: #4B84FF;
+border-radius: 1000px;
+
+
+/* 스터디 생성 */
+
+position: absolute;
+width: 65px;
+height: 17px;
+left: 1343.65px;
+top: 392px;
+
+font-family: 'AppleSDGothicNeoB00';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+
+color: #F8F9FF;
+
+
+
+/* 로그아웃 */
+
+position: absolute;
+width: 39px;
+height: 14px;
+left: 1488px;
+top: 285px;
+
+font-family: 'AppleSDGothicNeoL00';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 14px;
+/* 상자 높이와 동일 */
+
+color: #25272B;
+
+
+
+/* 자습대장 적으러 가기 */
+
+position: absolute;
+width: 171px;
+height: 28px;
+left: 1180px;
+top: 483px;
+
+font-family: 'AppleSDGothicNeoSB00';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+/* 상자 높이와 동일 */
+
+color: #25272B;
+
+
+
+/* user01@gamil.com */
+
+position: absolute;
+width: 132px;
+height: 14px;
+left: 1330px;
+top: 339px;
+
+font-family: 'AppleSDGothicNeoR00';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+
+color: #25272B;
+
+
+
+/* 성원숭님, */
+
+position: absolute;
+width: 75px;
+height: 24px;
+left: 1329px;
+top: 302px;
+
+font-family: 'AppleSDGothicNeoSB00';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+
+color: #25272B;
+
+
+
+/* Group 2 */
+
+position: absolute;
+width: 700.79px;
+height: 278px;
+left: 362px;
+top: 253px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 700.06px;
+height: 278px;
+left: 362.36px;
+top: 253px;
+
+background: #D9D9D9;
+
+
+/* Vector 1 */
+
+position: absolute;
+width: 700.43px;
+height: 278px;
+left: 362px;
+top: 253px;
+
+background: #D9D9D9;
+border: 4px solid #FFFFFF;
+
+
+/* Vector 2 */
+
+position: absolute;
+width: 700.79px;
+height: 278px;
+left: 362px;
+top: 253px;
+
+background: #D9D9D9;
+border: 4px solid #FFFFFF;
+
+
+/* Rectangle 57 */
+
+position: absolute;
+width: 1197px;
+height: 2px;
+right: 361px;
+top: 863px;
+
+background: #DBDAE2;
+
+
+/* 검색 */
+
+position: absolute;
+width: 42px;
+height: 31px;
+left: 396px;
+top: 173px;
+
+font-family: 'AppleSDGothicNeoL00';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 31px;
+/* 상자 높이와 동일 */
+
+color: #25272B;
+
+
+
+/* image 3 */
+
+position: absolute;
+width: 800.25px;
+height: 582px;
+left: 345px;
+top: 240px;
+
+background: url(image.png);
+
+
+/* image 5 */
+
+position: absolute;
+width: 124px;
+height: 40px;
+left: 1362px;
+top: 166px;
+
+background: url(image.png);
+
+
+/* image 4 */
+
+position: absolute;
+width: 144.13px;
+height: 34px;
+left: 1180px;
+top: 172px;
+
+background: url(image.png);
+
+
+/* Mask group */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 1212px;
+top: 285px;
+
+
+
+/* Group 4 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 1212px;
+top: 285px;
+
+
+
+/* Ellipse 1 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 1212px;
+top: 285px;
+
+background: #D9D9D9;
+
+
+/* KakaoTalk_20250429_142727217 1 */
+
+position: absolute;
+width: 106.32px;
+height: 106.32px;
+left: 1209.25px;
+top: 279.5px;
+
+background: url(KakaoTalk_20250429_142727217.jpg);
+
+
+/* Rectangle 78 */
+
+position: absolute;
+width: 180px;
+height: 67px;
+left: 1180px;
+top: 535px;
+
+background: #4B84FF;
+border-radius: 15px;
+
+
+/* image */
+
+position: absolute;
+width: 379px;
+height: 181px;
+left: 1180px;
+top: 632px;
+
+background: url(image.png);
+border-radius: 15px;
+
+
+/* Rectangle 116 */
+
+position: absolute;
+width: 180px;
+height: 67px;
+left: 1379px;
+top: 535px;
+
+background: #4B84FF;
+border-radius: 15px;
+
+
+/* 등록 */
+
+position: absolute;
+width: 35px;
+height: 25px;
+left: 1253px;
+top: 553px;
+
+font-family: 'AppleSDGothicNeoEB00';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 29px;
+
+color: #F8F9FF;
+
+
+
+/* 수정 */
+
+position: absolute;
+width: 35px;
+height: 25px;
+left: 1452px;
+top: 553px;
+
+font-family: 'AppleSDGothicNeoEB00';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 29px;
+
+color: #F8F9FF;
+
+
+
+/* Rectangle 114 */
+
+position: absolute;
+width: 38px;
+height: 2px;
+left: 1488px;
+top: 302px;
+
+background: #E0DFF0;
+
+
+/* Rectangle 115 */
+
+position: absolute;
+width: 74px;
+height: 2px;
+left: 1329px;
+top: 331px;
+
+background: #E0DFF0;
+
+
+/* Rectangle 118 */
+
+position: absolute;
+width: 166px;
+height: 2px;
+left: 1180px;
+top: 513px;
+
+background: #E0DFF0;
+
+
+/* Group 110 */
+
+position: absolute;
+width: 1197px;
+height: 405px;
+left: 362px;
+top: 915px;
+
+
+
+/* Rectangle 120 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1197px;
+height: 405px;
+left: 362px;
+top: 915px;
+
+background: #FFFFFF;
+border: 2px solid #3867FF;
+border-radius: 15px;
+
+
+/* 레모나 스터디 현황 */
+
+position: absolute;
+width: 317px;
+height: 56px;
+left: 461px;
+top: 989px;
+
+font-family: 'AppleSDGothicNeoB00';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 56px;
+/* 상자 높이와 동일 */
+
+color: #25272B;
+
+
+
+/* 방향성 : 레벨업 */
+
+position: absolute;
+width: 314.79px;
+height: 22px;
+left: 482.71px;
+top: 1065px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #25272B;
+
+
+
+/* 생성일 : 2025.05.12 */
+
+position: absolute;
+width: 314.79px;
+height: 23px;
+left: 482.71px;
+top: 1107px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #25272B;
+
+
+
+/* 운영기간 : 3개월 */
+
+position: absolute;
+width: 152.96px;
+height: 23px;
+left: 482.71px;
+top: 1150px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #25272B;
+
+
+
+/* 정원 : 3 / 5 명 */
+
+position: absolute;
+width: 134.21px;
+height: 22px;
+left: 482.71px;
+top: 1194px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #25272B;
+
+
+
+/* Ellipse 48 */
+
+position: absolute;
+width: 10.85px;
+height: 11px;
+left: 461px;
+top: 1071px;
+
+background: #4AA7FF;
+
+
+/* Ellipse 49 */
+
+position: absolute;
+width: 10.85px;
+height: 11px;
+left: 461px;
+top: 1113px;
+
+background: #4AA7FF;
+
+
+/* Ellipse 50 */
+
+position: absolute;
+width: 10.85px;
+height: 11px;
+left: 461px;
+top: 1156px;
+
+background: #4AA7FF;
+
+
+/* Ellipse 51 */
+
+position: absolute;
+width: 10.85px;
+height: 11px;
+left: 461px;
+top: 1199px;
+
+background: #4AA7FF;
+
+
+/* Mask group */
+
+position: absolute;
+width: 416px;
+height: 237.71px;
+left: 975px;
+top: 999px;
+
+
+
+/* Rectangle 247 */
+
+position: absolute;
+width: 416px;
+height: 237.71px;
+left: 975px;
+top: 999px;
+
+background: #D9D9D9;
+border-radius: 15px;
+
+
+/* 캡처 1 */
+
+position: absolute;
+width: 443.59px;
+height: 333.8px;
+left: 960.74px;
+top: 940.76px;
+
+background: url(캡처.png);
+
+
+/* Rectangle 74 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 42.43px;
+height: 42.43px;
+left: 451px;
+top: 1122px;
+
+border: 4px solid #4AA7FF;
+transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
+
+
+/* Rectangle 73 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 42.11px;
+height: 42.11px;
+left: 1469.35px;
+top: 1122px;
+
+border: 4px solid #4AA7FF;
+transform: matrix(0.7, -0.71, 0.7, 0.71, 0, 0);
+
+
+/* Group 112 */
+
+position: absolute;
+width: 1920px;
+height: 210px;
+left: 0px;
+bottom: 0px;
+
+
+
+/* Rectangle 13 */
+
+position: absolute;
+width: 1920px;
+height: 210px;
+right: 0px;
+top: 1484px;
+
+background: #EEEDF3;
+
+
+/* 세미 프로젝트 ; / */
+
+position: absolute;
+width: 180px;
+height: 19px;
+left: 730px;
+top: 1578px;
+
+font-family: 'AppleSDGothicNeoR00';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+
+color: #000000;
+
+
+
+/*  서울 중구 남대문로 120 / */
+
+position: absolute;
+width: 244px;
+height: 19px;
+left: 877px;
+top: 1578px;
+
+font-family: 'AppleSDGothicNeoR00';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+
+color: #000000;
+
+
+
+/* 02 - 1111 - 2222 */
+
+position: absolute;
+width: 108px;
+height: 19px;
+left: 1082px;
+top: 1578px;
+
+font-family: 'AppleSDGothicNeoR00';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+
+color: #000000;
+
+
+
+/* 프로젝트 소개 | 이용약관 | 개인정보처리방침 | 고객센터 */
+
+position: absolute;
+width: 282px;
+height: 17px;
+left: 834px;
+top: 1636px;
+
+font-family: 'AppleSDGothicNeoL00';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 17px;
+/* 상자 높이와 동일 */
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* GoStudy */
+
+position: absolute;
+width: 164px;
+height: 14px;
+left: 770px;
+top: 1531px;
+
+font-family: 'Helvetica Neue LT Std';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+
+
+
+/* @ kh academy */
+
+position: absolute;
+width: 110px;
+height: 19px;
+left: 883px;
+top: 1539px;
+
+font-family: 'Helvetica Neue LT Std';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* Group 165 */
+
+position: absolute;
+width: 30px;
+height: 30px;
+left: 733px;
+top: 1526px;
+
+
+
+/* 레이어 5 */
+
+position: absolute;
+left: 38.18%;
+right: 60.26%;
+top: 90.08%;
+bottom: 8.15%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 38.18%;
+right: 60.26%;
+top: 90.08%;
+bottom: 8.15%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 38.18%;
+right: 60.26%;
+top: 90.08%;
+bottom: 8.15%;
+
+background: #3867FF;
+box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+
+
+/* Vector */
+
+position: absolute;
+left: 39.01%;
+right: 60.54%;
+top: 90.79%;
+bottom: 8.45%;
+
+background: #D5DFFF;
+box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+
+
+/* Vector */
+
+position: absolute;
+left: 39.12%;
+right: 60.67%;
+top: 90.46%;
+bottom: 8.97%;
+
+background: #4AA7FF;
+box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+
+
+/* Vector */
+
+position: absolute;
+left: 38.36%;
+right: 60.87%;
+top: 90.37%;
+bottom: 8.63%;
+
+background: #F8FAFF;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+
+
+/* Group 114 */
+
+position: absolute;
+width: 1920px;
+height: 106px;
+right: 0px;
+top: 0px;
+
+
+
+/* Rectangle 124 */
+
+position: absolute;
+width: 1915px;
+height: 106px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 38 */
+
+position: absolute;
+width: 1920px;
+height: 2px;
+right: 0px;
+top: 104px;
+
+background: #DBDAE2;
+
+
+/* 구인 */
+
+position: absolute;
+width: 42px;
+height: 31px;
+left: 567px;
+top: 45px;
+
+font-family: 'AppleSDGothicNeoL00';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 31px;
+/* 상자 높이와 동일 */
+
+color: #25272B;
+
+
+
+/* 공지사항 */
+
+position: absolute;
+width: 84px;
+height: 31px;
+left: 362px;
+top: 45px;
+
+font-family: 'AppleSDGothicNeoL00';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 31px;
+/* 상자 높이와 동일 */
+
+color: #25272B;
+
+
+
+/* 질문 게시판 */
+
+position: absolute;
+width: 111px;
+height: 31px;
+left: 730px;
+top: 45px;
+
+font-family: 'AppleSDGothicNeoL00';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 31px;
+/* 상자 높이와 동일 */
+text-align: center;
+
+color: #25272B;
+
+
+
+/* 스터디 현황 */
+
+position: absolute;
+width: 111px;
+height: 31px;
+left: 962px;
+top: 45px;
+
+font-family: 'AppleSDGothicNeoL00';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 31px;
+/* 상자 높이와 동일 */
+
+color: #25272B;
+
+
+
+/* 자유 게시판 */
+
+position: absolute;
+width: 111px;
+height: 31px;
+left: 1194px;
+top: 45px;
+
+font-family: 'AppleSDGothicNeoL00';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 31px;
+/* 상자 높이와 동일 */
+
+color: #25272B;
+
+
+
+/* Rectangle 115 */
+
+position: absolute;
+width: 30px;
+height: 5px;
+left: 1840px;
+top: 49px;
+
+background: #3867FF;
+
+
+/* Rectangle 117 */
+
+position: absolute;
+width: 30px;
+height: 5px;
+left: 1840px;
+top: 60px;
+
+background: #3867FF;
+
+
+/* Rectangle 116 */
+
+position: absolute;
+width: 30px;
+height: 5px;
+left: 1840px;
+top: 71px;
+
+background: #3867FF;
+
+
+/* 스터디 게시판 */
+
+position: absolute;
+width: 131px;
+height: 31px;
+left: 1428px;
+top: 47px;
+
+font-family: 'AppleSDGothicNeoL00';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 31px;
+/* 상자 높이와 동일 */
+
+color: #25272B;
+
+
+
+/* Rectangle 212 */
+
+position: absolute;
+width: 84px;
+height: 2px;
+left: 362px;
+top: 104px;
+
+background: #DBDAE2;
+
+
+/* Rectangle 213 */
+
+position: absolute;
+width: 42px;
+height: 2px;
+left: 567px;
+top: 104px;
+
+background: #DBDAE2;
+
+
+/* Rectangle 214 */
+
+position: absolute;
+width: 111px;
+height: 2px;
+left: 730px;
+top: 104px;
+
+background: #DBDAE2;
+
+
+/* Rectangle 215 */
+
+position: absolute;
+width: 111px;
+height: 2px;
+left: 962px;
+top: 104px;
+
+background: #DBDAE2;
+
+
+/* Rectangle 216 */
+
+position: absolute;
+width: 111px;
+height: 2px;
+left: 1194px;
+top: 104px;
+
+background: #DBDAE2;
+
+
+/* Rectangle 217 */
+
+position: absolute;
+width: 131px;
+height: 2px;
+left: 1428px;
+top: 104px;
+
+background: #DBDAE2;
+
+
+/* Group 223 */
+
+position: absolute;
+width: 201px;
+height: 47px;
+left: 50px;
+top: 34px;
+
+
+
+/* GoStudy */
+
+position: absolute;
+width: 150px;
+height: 47px;
+left: 101px;
+top: 34px;
+
+font-family: 'TabletGothicW02-SemiBold';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 48px;
+
+color: #3867FF;
+
+
+
+/* Group 217 */
+
+position: absolute;
+width: 43px;
+height: 43px;
+left: 50px;
+top: 38px;
+
+
+
+/* Rectangle 319 */
+
+position: absolute;
+width: 43px;
+height: 43px;
+left: 50px;
+top: 38px;
+
+background: #3867FF;
+box-shadow: inset 0px 0px 3.2px rgba(0, 0, 0, 0.25);
+border-radius: 6px;
+
+
+/* Vector */
+
+position: absolute;
+left: 3.83%;
+right: 95.53%;
+top: 3.25%;
+bottom: 95.68%;
+
+background: #D5DFFF;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+
+
+/* Vector */
+
+position: absolute;
+left: 3.99%;
+right: 95.72%;
+top: 2.78%;
+bottom: 96.42%;
+
+background: #4AA7FF;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+
+
+/* Vector */
+
+position: absolute;
+left: 2.92%;
+right: 96%;
+top: 2.66%;
+bottom: 95.94%;
+
+background: #F8FAFF;
+box-shadow: 0px 0px 1.2px rgba(0, 0, 0, 0.25);
