@@ -35,7 +35,7 @@ public class BoardTypeIntercepteor implements HandlerInterceptor{
 	throws Exception {
 
 		// boardTypeList를 DB에서 얻어오기
-		
+		// 서블릿에서 사용 가능한 객체
 		// page< request < session < application
 		// application scope : 
 		// - 서버 시작 시 부터 서버 종료 시 까지 유지되는 Servlet 내장 객체
@@ -49,12 +49,14 @@ public class BoardTypeIntercepteor implements HandlerInterceptor{
 		if(application.getAttribute("boardTypeList") == null) {
 			
 			// boardTypeList 조회 서비스 호출
+			// 바로 컨트롤러로 감
 			List<Map<String, Object>> boardTypeList = service.selectBoardTypeList();
 			
 			// 조회 결과를 application scope 에 추가
 			application.setAttribute("boardTypeList", boardTypeList);
 			
-			log.debug("boardTypeList L " + boardTypeList);
+			log.debug("boardTypeList" + boardTypeList);
+			// 밖에서 찍고 싶으면 application.get
 		}
 		
 		
