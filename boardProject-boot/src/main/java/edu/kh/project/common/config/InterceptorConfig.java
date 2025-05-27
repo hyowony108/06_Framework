@@ -17,7 +17,7 @@ public class InterceptorConfig implements WebMvcConfigurer{
 	public BoardTypeIntercepteor boardTypeIntercepteor() {
 		return new BoardTypeIntercepteor();
 	}
-	
+	// WebMvcConfigurer 상속 받은 이유
 	// 동작할 인터셉터 객체를 추가하는 메서드
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
