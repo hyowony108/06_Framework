@@ -54,7 +54,7 @@
    <!-- 게시판 조율 조회 -->
    <select id="selectBoardTypeList">
     SELECT BOARD_CODE "boardCode", BOARD_NAME "boardName"
-	FROM "BOARD_TYPE"
+	FROM BOARD_TYPE
 	ORDER BY BOARD_CODE
    </select>
 	
