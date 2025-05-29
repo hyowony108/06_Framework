@@ -1,7 +1,11 @@
 package edu.kh.project.admin.controller;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,12 +13,15 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import edu.kh.project.admin.model.service.AdminService;
+import edu.kh.project.board.model.dto.Board;
 import edu.kh.project.member.model.dto.Member;
+import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@CrossOrigin(origins="http://localhost:5173")
+@CrossOrigin(origins="http://localhost:5173"/*, allowCredentials = "true"*/)
+// allowCredentials = "true" 클라이언트로부터 들어오는 쿠키 허용
 @RequestMapping("admin")
 @Slf4j
 @SessionAttributes({"loginMember"})
@@ -34,5 +41,66 @@ public class AdminController {
 		
 		model.addAttribute(loginMember);
 		return loginMember;
+	}
+	
+	/** 관리자 로그아웃
+	 * @return
+	 */
+	@GetMapping("logout")
+	public ResponseEntity<String> logout(HttpSession session){
+		
+		// ResponseEntity
+		// Spring에서 제공하는 Http 응답 데이터를
+		// 커스터마이징 할 수 있도록 지원하는 클래스
+		// -> HTTP 상태코드, 헤더, 응답 본문(body)
+		
+		try {
+			
+			session.invalidate(); // 세션 무효화 처리
+			return ResponseEntity.status(HttpStatus.OK) // 200
+					.body("로그아웃이 완료되었습니다.");
+			
+		} catch (Exception e) {
+
+			// 세션 무효화 중 예외 발생한 경우
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR) // 500
+					.body("로그아웃 중 예외 발생 : " + e.getMessage());
+		}
+	}
+	
+// ----------------------- 통계 ------------------------------------
+	
+	@GetMapping("maxReadCount")
+	public ResponseEntity<Object> maxReadCount(){
+		try {
+			Board board = service.maxReadCount();
+			return ResponseEntity.status(HttpStatus.OK).body(board);
+		} catch (Exception e) {
+			
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+
+		}
+	}
+	@GetMapping("maxLikeCount")
+	public ResponseEntity<Object> maxLikeCount(){
+		try {
+			Board board = service.maxLikeCount();
+			return ResponseEntity.status(HttpStatus.OK).body(board);
+		} catch (Exception e) {
+			
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+			
+		}
+	}
+	@GetMapping("maxCommentCount")
+	public ResponseEntity<Object> maxCommentCount(){
+		try {
+			Board board = service.maxCommentCount();
+			return ResponseEntity.status(HttpStatus.OK).body(board);
+		} catch (Exception e) {
+			
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+			
+		}
 	}
 }

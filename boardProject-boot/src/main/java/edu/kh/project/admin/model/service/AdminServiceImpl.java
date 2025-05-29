@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import edu.kh.project.admin.model.mapper.AdminMapper;
+import edu.kh.project.board.model.dto.Board;
 import edu.kh.project.member.model.dto.Member;
 import lombok.RequiredArgsConstructor;
 
@@ -34,5 +35,20 @@ public class AdminServiceImpl implements AdminService{
 		
 		loginMember.setMemberPw(null);
 		return loginMember;
+	}
+	
+	@Override
+	public Board maxReadCount() {
+		return mapper.maxReadCount();
+	}
+	
+	@Override
+	public Board maxLikeCount() {
+		return mapper.maxLikeCount();
+	}
+	
+	@Override
+	public Board maxCommentCount() {
+		return mapper.maxCommentCount();
 	}
 }
