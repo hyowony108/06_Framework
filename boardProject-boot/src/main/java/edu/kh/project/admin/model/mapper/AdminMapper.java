@@ -1,5 +1,7 @@
 package edu.kh.project.admin.model.mapper;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 
 import edu.kh.project.board.model.dto.Board;
@@ -19,5 +21,16 @@ public interface AdminMapper {
 	Board maxLikeCount();
 
 	Board maxCommentCount();
+
+	// 신규 가입 회원 7일
+	List<Member> MaxSignCount();
+
+	List<Member> selectWithdrawnMemberList();
+
+	List<Board> selectdeleteBoardsList();
+
+	int restoreMember(int memberNo);
+
+	int restoreBoard(int boardNo);
 
 }

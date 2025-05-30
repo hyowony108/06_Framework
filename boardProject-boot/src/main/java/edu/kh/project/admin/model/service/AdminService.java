@@ -1,5 +1,7 @@
 package edu.kh.project.admin.model.service;
 
+import java.util.List;
+
 import edu.kh.project.board.model.dto.Board;
 import edu.kh.project.member.model.dto.Member;
 
@@ -26,4 +28,22 @@ public interface AdminService {
 	 */
 	Board maxCommentCount();
 
+	/** 신규 가입 회원 조회 7명
+	 * @return
+	 */
+	List<Member> MaxSignCount();
+
+	/** 탈퇴한 회원 목록 조회
+	 * @return
+	 */
+	List<Member> selectWithdrawnMemberList();
+
+	/** 삭제된 게시글 목록 조회
+	 * @return
+	 */
+	List<Board> selectdeleteBoardsList();
+
+	int restoreMember(int memberNo);
+
+	int restoreBoard(int boardNo); 
 }
