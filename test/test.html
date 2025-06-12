@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>보조금24 검색</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    input { padding: 6px; width: 200px; }
+    button { padding: 6px 10px; }
+    pre { white-space: pre-wrap; background: #f4f4f4; padding: 10px; }
+  </style>
+</head>
+<body>
+  <h1>보조금24 공공서비스 검색</h1>
+  <input type="text" id="searchInput" placeholder="검색어 입력 (예: 복지)" />
+  <button id="searchBtn">검색</button>
+
+  <h2>검색 결과:</h2>
+  <pre id="result">결과가 여기에 표시됩니다.</pre>
+
+  <script>
+    const serviceKey = 'eLcAi6EheQARtaiHDeQN%2Bkg2wAus4IF6uAHfE5gE4g5yCga5jSh9%2BEGNJRh6m1FpEU4xmGzL3yh9GcLCk3MOXQ%3D%3D'; // 🔒 발급받은 인증키 그대로 입력하세요
+
+    document.getElementById('searchBtn').addEventListener('click', () => {
+      const keyword = document.getElementById('searchInput').value.trim();
+
+      if (!keyword) {
+        alert('검색어를 입력해주세요.');
+        return;
+      }
+
+     const corsProxy = 'https://cors-anywhere.herokuapp.com/';
+      const url = `${corsProxy}https://api.odcloud.kr/api/gov24/v3/serviceList?serviceKey=${encodeURIComponent(serviceKey)}&searchWrd=${encodeURIComponent(keyword)}&page=1&perPage=10&returnType=JSON`;
+
+      fetch(url)
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(err => console.error(err));
+
+
+
+      // fetch(url)
+      //   .then(response => {
+      //     if (!response.ok) {
+      //       throw new Error(`HTTP 오류: ${response.status}`);
+      //     }
+      //     return response.json();
+      //   })
+      //   .then(data => {
+      //     const resultBox = document.getElementById('result');
+      //     if (data && data.data && data.data.length > 0) {
+      //       // 데이터가 있을 경우
+      //       const list = data.data.map(item => `- ${item.servNm} (${item.jurMnofNm})`).join('\n');
+      //       resultBox.textContent = list;
+      //     } else {
+      //       resultBox.textContent = '검색 결과가 없습니다.';
+      //     }
+      //   })
+      //   .catch(error => {
+      //     document.getElementById('result').textContent = '에러 발생: ' + error.message;
+      //   });
+    });
+  </script>
+</body>
+</html>
