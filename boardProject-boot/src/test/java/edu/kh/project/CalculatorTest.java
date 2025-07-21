@@ -7,12 +7,13 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
+//import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
 import edu.kh.project.test.Calculator;
+import lombok.extern.slf4j.Slf4j;
 
 // JUnit 테스트 코드는 반드시 src/test/java 경로에 위치해야함!
 
@@ -26,17 +27,19 @@ import edu.kh.project.test.Calculator;
 // -> 테스트가 순서에 의존하면 좋은 테스트가 아님
 // 4. 그래도 순서를 따지고 싶다면 @TestMethodOrder / @Order 사용할 수 있다
 
-@TestMethodOrder(OrderAnnotation.class)
+//@TestMethodOrder(OrderAnnotation.class)
+@Slf4j
 public class CalculatorTest {
 	
 	private static Calculator calculator;
 	
 	// @BeforeAll, @AfterAll - static 메서드에서만 사용가능
 	@BeforeAll
-	static void initAll() {
+	static void setUp() {
 		// 모든 테스트 실행 전에 1번만 실행
 		calculator = new Calculator();
-		System.out.println("@BeforeAll - 테스트 시작 전 초기화");
+//		System.out.println("@BeforeAll - 테스트 시작 전 초기화");
+		log.info("테스트 시작");
 	}
 	
 	@AfterAll
@@ -47,49 +50,49 @@ public class CalculatorTest {
 	}
 	
 	@Test // 테스트 메서드 표시
-	@Order(1) // junit / 메서드 오더꺼 임포트 해야함
+//	@Order(1) // junit / 메서드 오더꺼 임포트 해야함
 	void testAdd() {
 		System.out.println("testAdd 실행");
-		assertEquals(10, calculator.add(2, 3), "2 + 3은 5여야합니다");
+		assertEquals(5, calculator.add(2, 3), "2 + 3은 5여야합니다");
 		// assertEquals(기댓값, 실제값) : 두 값이 같은가?
 	}
 	@Test // 테스트 메서드 표시
-	@Order(2)
+//	@Order(2)
 	void testSubtract() {
 		System.out.println("testSubtract 실행");
 		assertEquals(6, calculator.subtract(12, 6), "2 + 3은 5여야합니다");
 		// assertEquals(기댓값, 실제값) : 두 값이 같은가?
 	}
 	@Test // 테스트 메서드 표시
-	@Order(3)
+//	@Order(3)
 	void testMultiply() {
 		System.out.println("testMultiply 실행");
 		assertEquals(6, calculator.multiply(2, 3), "2 + 3은 5여야합니다");
 		// assertEquals(기댓값, 실제값) : 두 값이 같은가?
 	}
 	@Test // 테스트 메서드 표시
-	@Order(4)
+//	@Order(4)
 	void testDivide() {
 		System.out.println("testDivide 실행");
 		assertEquals(3, calculator.divide(6, 2), "2 + 3은 5여야합니다");
 		// assertEquals(기댓값, 실제값) : 두 값이 같은가?
 	}
 	@Test // 테스트 메서드 표시
-	@Order(5)
+//	@Order(5)
 	void testTrueFalse() {
 		int result = calculator.add(2, 2);
 		assertTrue(result == 4, "결과가 4여야 합니다");
 		assertFalse(result == 5, "결과가 5면 안됩니다");
 	}
 	@Test // 테스트 메서드 표시
-	@Order(6)
+//	@Order(6)
 	void testDivideByZero() {
 		System.out.println("testDivideByZero 실행");
 		
 		// assertThrows(Exception,class, executable) : 예외 발생 여부
 		Exception exception = assertThrows(IllegalArgumentException.class, 
 				()-> {
-					calculator.divide(10, 2);
+					calculator.divide(5, 0);
 				});
 
 		assertEquals("0으로 나눌 수 없음", exception.getMessage());
